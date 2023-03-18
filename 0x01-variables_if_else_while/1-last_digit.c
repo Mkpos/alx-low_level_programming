@@ -3,9 +3,8 @@
 #include <time.h>
 
 /**
- * main - main fuction
- *
- * Result: always 0
+ * main - Entry point
+ * Return: Always 0
  */
 int main(void)
 {
