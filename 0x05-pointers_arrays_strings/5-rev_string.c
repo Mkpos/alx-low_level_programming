@@ -8,11 +8,19 @@
 
 void rev_string(char *s)
 {
-	int i;
-	int count = -1;
+	int i, len = 0;
+	char *buffer = s;
+	char temp;
 
-	for (i = 0 ; s[i] != '\0' ; i++)
-		count++;
-	for (i = count ; i >= 0 ; i--)
-	_putchar('\n');
+	while (buffer[len] != '\0')
+	{
+		len++;
+	}
+	for (i = 0; i < len / 2; i++)
+	{
+		temp = buffer[i];
+		buffer[i] = buffer[len - i - 1];
+		buffer[len - i - 1] = temp;
+	}
+	*s = *buffer;
 }
